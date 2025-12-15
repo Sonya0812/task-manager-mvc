@@ -1,6 +1,3 @@
-# Simple Task Manager - MVC Pattern
-
-# ---------- MODEL ----------
 $tasks = @()
 $nextId = 1
 
@@ -47,7 +44,6 @@ function Delete-TaskModel {
     return $found
 }
 
-# ---------- VIEW ----------
 function Show-MenuView {
     Clear-Host
     Write-Host "========================================"
@@ -95,7 +91,7 @@ function Show-ErrorView {
     Write-Host "ERROR: $message"
 }
 
-# ---------- CONTROLLER ----------
+
 function Process-CommandController {
     param($command, $argument)
     
@@ -164,7 +160,7 @@ function Process-CommandController {
     }
 }
 
-# ---------- MAIN PROGRAM ----------
+
 Show-MenuView
 
 while ($true) {
